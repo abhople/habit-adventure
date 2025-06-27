@@ -2,6 +2,8 @@
 
 A fun and engaging habit tracking app designed specifically for kids, turning daily habits into an exciting role-playing adventure game. Complete quests, level up your character, earn gold, unlock equipment, and explore a fantasy world while building good habits!
 
+![Habit Adventure App Screenshot](assets/screenshot.png)
+
 ## ✨ Features
 
 ### 🗡️ Adventure Theme
