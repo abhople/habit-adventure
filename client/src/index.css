@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .adventure-card {
+    @apply bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20;
+  }
+  
+  .adventure-button {
+    @apply bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+  
+  .adventure-input {
+    @apply bg-white/80 backdrop-blur-sm border-2 border-purple-200 rounded-xl px-4 py-3 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all duration-300;
+  }
+  
+  .level-badge {
+    @apply bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold px-3 py-1 rounded-full text-sm;
+  }
+  
+  .gold-badge {
+    @apply bg-gradient-to-r from-yellow-300 to-yellow-500 text-white font-bold px-3 py-1 rounded-full text-sm;
+  }
+  
+  .experience-bar {
+    @apply bg-gray-200 rounded-full h-3 overflow-hidden;
+  }
+  
+  .experience-fill {
+    @apply bg-gradient-to-r from-green-400 to-blue-500 h-full transition-all duration-1000 ease-out;
+  }
+  
+  .habit-card {
+    @apply adventure-card p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  .difficulty-easy {
+    @apply bg-green-100 text-green-800 border-green-200;
+  }
+  
+  .difficulty-medium {
+    @apply bg-yellow-100 text-yellow-800 border-yellow-200;
+  }
+  
+  .difficulty-hard {
+    @apply bg-red-100 text-red-800 border-red-200;
+  }
+  
+  .rarity-common {
+    @apply bg-gray-100 text-gray-800 border-gray-200;
+  }
+  
+  .rarity-uncommon {
+    @apply bg-green-100 text-green-800 border-green-200;
+  }
+  
+  .rarity-rare {
+    @apply bg-blue-100 text-blue-800 border-blue-200;
+  }
+  
+  .rarity-epic {
+    @apply bg-purple-100 text-purple-800 border-purple-200;
+  }
+  
+  .rarity-legendary {
+    @apply bg-orange-100 text-orange-800 border-orange-200;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.1); }
+}
+
+@keyframes levelUp {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.sparkle-animation {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.level-up-animation {
+  animation: levelUp 0.5s ease-in-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+} 
