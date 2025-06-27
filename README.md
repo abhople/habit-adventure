@@ -4,6 +4,8 @@ A fun and engaging habit tracking app designed specifically for kids, turning da
 
 ![Habit Adventure App Screenshot](assets/screenshot.png)
 
+> **🚀 Built with Cursor AI** - This project was generated using Cursor's AI-powered coding assistant, demonstrating the power of AI-assisted development and rapid prototyping. The entire full-stack application was created through collaborative AI-human coding sessions, showcasing modern development workflows.
+
 ## ✨ Features
 
 ### 🗡️ Adventure Theme
